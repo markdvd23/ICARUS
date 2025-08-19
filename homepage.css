@@ -1,0 +1,276 @@
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: poppins;
+
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img {
+  height: 100vh;
+  width: 100%; 
+  object-fit: cover;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.banner-text {
+  font-size: 15px;
+  position: absolute;
+  font-weight: 500;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6); 
+  max-width: 80%; 
+}
+
+.banner-text h1 {
+  font-size: 54px;      
+  font-weight: bold;        
+  letter-spacing: 2px;      
+  text-transform: uppercase; 
+  color: white;          
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.7); 
+}
+
+.banner-text .btn {
+  color:black;
+  background-color: #FBED57;
+  border: none;
+  padding: 12px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.7); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.categories {
+  background-color: #e7e7e7;
+  padding: 20px;
+  border: 2px solid #000;
+  max-width: 100%;
+  
+
+}
+
+.categories h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;   
+}
+
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 50px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 45px;
+  padding-left: 35px;
+  
+}
+
+.category-item p {
+  font-weight: bold;
+  font-size: 54px;
+  margin-right: 15px;
+}
+
+.category-item img {
+  width: 100px;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  .category-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.categories,
+.under-navbar-bg {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  user-select: none;
+}
+
+.underline {
+  width: 350px;
+  height: 3px;
+  background-color: #CC9D06;
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+.swiper {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.swiper-slide {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+/* Active slide (highlight effect) */
+.swiper-slide-active {
+  transform: scale(1.05);
+}
+
+.swiper-slide-active img {
+  border: 4px solid white;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: black;
+  opacity: 1;
+  margin: 0 6px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2F6A87;
+  transform: scale(1.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.featured-products {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.product-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  background: #6EB2CC;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+.product-card h5 {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.rating {
+  text-align: left;
+  color: #FFFF00;
+  font-size: 1.2rem;
+}
+
+.rating i {
+  margin: 0 1px;
+}
+
+footer {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #f8f9fa; /* light gray/white footer */
+  color: #000; /* black text */
+}
+
+footer h5 {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #555; /* darker gray on hover */
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: black;
+}
+
+footer .col {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+footer.border-top {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
